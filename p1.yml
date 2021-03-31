@@ -1,0 +1,11 @@
+---
+- hosts: production
+  tasks:
+  - name: Creating a file with content
+    copy:
+      dest: "/home/ec2-user/text_file.txt"
+      content: |
+        Hello
+	      World
+
+#Basic playbook that creates a file named text_file.txt with Hello World
